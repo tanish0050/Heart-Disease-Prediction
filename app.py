@@ -19,7 +19,7 @@ from sklearn.metrics import accuracy_score
 
 """Data collection and Processing"""
 
-heart_data=pd.read_csv('/var/tmp/heart.csv')
+heart_data=pd.read_csv("heart.csv")
 
 heart_data.head()
 
