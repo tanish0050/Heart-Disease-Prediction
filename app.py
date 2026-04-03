@@ -1,3 +1,5 @@
+from flask import Flask
+app = Flask(__name__)
 # -*- coding: utf-8 -*-
 """Untitled2.ipynb
 
@@ -92,6 +94,9 @@ input_data_reshaped = input_data_as_numpy_array.reshape(1,-1)
 
 prediction = model.predict(input_data_reshaped)
 print(prediction)
+import os
+port = int(os.environ.get("PORT", 10000))
+app.run(host="0.0.0.0", port=port)
 
 if (prediction[0]==0):
   print('The Person does not have a Heart Disease')
