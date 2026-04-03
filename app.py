@@ -32,7 +32,15 @@ heart_data.info()
 heart_data.isnull().sum()
 
 heart_data.describe()
+import pandas as pd
 
+heart_data = pd.read_csv("heart.csv")
+print(heart_data.head())
+print(heart_data.columns)
+heart_data.columns = heart_data.columns.str.strip()
+X = heart_data.drop(columns='target', axis=1)
+Y = heart_data['target']
+heart_data.columns = heart_data.columns.str.strip()
 """1--> Defective Heart
 
 0--> Healthy Heart
