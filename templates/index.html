@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Heart Disease Prediction</title>
+    <style>
+        body {
+            font-family: Arial;
+            margin: 50px;
+        }
+        .form-container {
+            max-width: 500px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0 20px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        input[type="submit"] {
+            background-color: red;
+            color: white;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+<div class="form-container">
+    <h2>Heart Disease Prediction</h2>
+
+    <form action="/predict" method="post">
+
+        <input type="number" name="age" placeholder="Age" required>
+
+        <input type="number" name="sex" placeholder="Sex (1=Male,0=Female)" required>
+
+        <input type="number" name="cp" placeholder="Chest Pain Type (0-3)" required>
+
+        <input type="number" name="trestbps" placeholder="Resting BP" required>
+
+        <input type="number" name="chol" placeholder="Cholesterol" required>
+
+        <input type="number" name="fbs" placeholder="Fasting Blood Sugar (1/0)" required>
+
+        <input type="number" name="restecg" placeholder="Rest ECG (0-2)" required>
+
+        <input type="number" name="thalach" placeholder="Max Heart Rate" required>
+
+        <input type="number" name="exang" placeholder="Exercise Angina (1/0)" required>
+
+        <input type="number" step="0.1" name="oldpeak" placeholder="Oldpeak" required>
+
+        <input type="number" name="slope" placeholder="Slope (0-2)" required>
+
+        <input type="number" name="ca" placeholder="CA (0-3)" required>
+
+        <input type="number" name="thal" placeholder="Thal (1-3)" required>
+
+        <input type="submit" value="Predict">
+
+    </form>
+
+    {% if prediction_text %}
+        <h3>{{ prediction_text }}</h3>
+    {% endif %}
+
+</div>
+</body>
+</html>
