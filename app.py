@@ -5,6 +5,7 @@ import pickle
 app = Flask(__name__)
 
 # 🔥 yaha change kiya hai
+import pickle
 model = pickle.load(open('heartdisease.pkl', 'rb'))
 
 @app.route('/')
