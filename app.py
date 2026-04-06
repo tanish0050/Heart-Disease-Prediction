@@ -18,19 +18,15 @@ def predict():
 
     try:
         features = [
-            float(request.form['age']),
-            float(request.form['sex']),
-            float(request.form['cp']),
-            float(request.form['trestbps']),
-            float(request.form['chol']),
-            float(request.form['fbs']),
-            float(request.form['restecg']),
-            float(request.form['thalach']),
-            float(request.form['exang']),
-            float(request.form['oldpeak']),
-            float(request.form['slope']),
-            float(request.form['ca']),
-            float(request.form['thal'])
+            features = [
+    
+                float(request.form['age']),
+                float(request.form['sex']),
+                float(request.form['cp']),
+                float(request.form['trestbps']),
+                float(request.form['chol']),
+                float(request.form['thalach'])
+]
         ]
 
         final_features = [np.array(features)]
