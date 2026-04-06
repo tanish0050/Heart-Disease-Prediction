@@ -1,5 +1,5 @@
 # ❤️ Heart Disease Prediction App
-
+ML-based Heart Disease Prediction Web App with Flask (Live 🚀)
 A Machine Learning web app built using Flask that predicts the likelihood of heart disease based on user input.
 
 ## 🚀 Live Demo
@@ -18,7 +18,10 @@ https://heart-disease-prediction-2-3n18.onrender.com
 - Deployed online
 
 ## 📷 Screenshot
-(Add screenshot here)
+<img width="1458" height="779" alt="image" src="https://github.com/user-attachments/assets/3ff027b0-3513-4336-a070-303b08e60774" />
+![App Screenshot](https://github.com/user-attachments/assets/3ff027b0-3513-4336-a070-303b08e60774)
+
+
 
 ## ⚙️ How to Run Locally
 ```bash
